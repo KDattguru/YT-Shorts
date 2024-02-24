@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+// App.js
+import React from 'react';
+import VerticalVideoPlayer from '../src/components/VerticalVideoPlayer';
+import logo from './images/logo.png';
+import NavBarC from './components/NavBarC'
+const App = () => {
+  const videoSource = 'https://www.youtube.com/embed/Jwpr6V_ou4k';
+  const videoSource1 = 'https://www.youtube.com/shorts/ALBJqnHVM3w?feature=share';
+  const videoSource2 = 'https://www.youtube.com/shorts/2vFg6lb3tSY?feature=share';
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavBarC />
+    <div className="container">
+    
+      <h1><img src={logo} alt="Logo" height="100px" width="100px" />YouTube Shorts </h1>
+    
+    
     </div>
+      <VerticalVideoPlayer videoSrc={videoSource} videoSrc1={videoSource1}  videoSrc2={videoSource2} />
+      </>
   );
-}
+};
 
 export default App;
