@@ -10,13 +10,8 @@ const VerticalVideoPlayer = ({ videoSrc, videoSrc1,videoSrc2}) => {
   return (
     <div className='container'>
     <div style={{ textAlign: 'center' }}>
-        <iframe width="315" height="560" src={videoSrc} title="China or Japan में orange की खेती कुछ इस तरह से की जाती हैं | professional farming of orange |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;web-comment" allowfullscreen></iframe> <button
-        onClick={handleLikeClick}
-        style={{
-          fontSize: '20px',
-          padding: '10px',
-          background: isLiked ? 'red' : 'transparent',
-          color: isLiked ? 'white' : 'black',
+        <iframe width="315" height="560" src={videoSrc} title="China or Japan में orange की खेती कुछ इस तरह से की जाती हैं | professional farming of orange |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;web-comment" allowfullscreen></iframe> 
+        <button onClick={handleLikeClick} style={{ fontSize: '20px', padding: '10px', background: isLiked ? 'red' : 'transparent', color: isLiked ? 'white' : 'black',
           border: '3px solid white',
           borderRadius: '5px',
           marginTop: '5px',

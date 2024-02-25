@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import VerticalVideoPlayer from '../src/components/VerticalVideoPlayer';
 import logo from './images/logo.png';
